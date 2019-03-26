@@ -94,7 +94,6 @@ class App extends Component {
 			})
 		);
 		this.setState({ rows });
-		console.log(seatNo);
 	};
 
 	render() {
