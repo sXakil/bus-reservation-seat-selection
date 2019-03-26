@@ -1,33 +1,85 @@
-.App {
-  text-align: center;
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+.btn-available {
+	background: #4ecb5f;
+	color: #fff;
+	box-shadow: 0 4px #3cab58;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn-available-i {
+	border-radius: 10%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-available-i:active {
+	box-shadow: 0 0 #3cab58;
+	top: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-booked {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 4px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn-booked-i {
+	border-radius: 10%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+}
+
+.btn-booked-i:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 4px;
 }
