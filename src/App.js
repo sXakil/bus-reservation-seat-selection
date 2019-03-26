@@ -48,6 +48,7 @@ class App extends Component {
 			seatBooked : 0,
 		});
 	};
+
 	componentDidMount() {
 		this.filler();
 	}
